@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "d8a4f53a-fc61-41cd-bae3-25422c45daea",
+		"name": "ELEPOKE-ポケモン選出最適化アプリ-local",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "HELLO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ポケモン スコア取得",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"mypoke\":[\"ヒートロトム\",\"アイアント\",\"ローブシン\",\"ゴリランダー\",\"バイウールー\",\"トゲキッス\"],\n    \"oppoke\":[\"タチフサグマ\",\"ワタシラガ\",\"ウォッシュロトム\",\"アイアント\",\"ドリュウズ\",\"リザードン\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/fit",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"fit"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
