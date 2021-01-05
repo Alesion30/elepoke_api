@@ -1,0 +1,11 @@
+# 初回
+python -m venv virt
+. virt/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+
+# python バージョン確認
+python -V
+
+# パッケージ 確認
+pip freeze
