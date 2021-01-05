@@ -1,6 +1,6 @@
 import os
 from flask import Flask, request
-import functions.elepoke as elepoke
+from functions import elepoke
 from flask_cors import CORS
 
 
