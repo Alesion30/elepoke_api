@@ -1,6 +1,6 @@
 from flask import Flask, request
 from flask_cors import CORS
-from api.functions import elepoke
+from functions import elepoke
 
 
 # Flaskのセットアップ
