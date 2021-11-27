@@ -1,5 +1,5 @@
 # ELEPOKE ポケモン選出最適化アプリ API
-https://elepoke.site
+https://elepoke.vercel.app
 
 ## API 利用方法 (ローカル環境)
 ```bash
